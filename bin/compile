@@ -17,5 +17,5 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p $SOX_DIR
 cd $SOX_DIR
-curl -L --silent $DOWNLOAD_URL | tar -xvf
+curl -L --silent $DOWNLOAD_URL | tar xz
 make install
