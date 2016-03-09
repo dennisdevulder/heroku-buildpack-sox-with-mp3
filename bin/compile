@@ -7,7 +7,7 @@ indent() {
 echo "-----> Install sox with mp2/mp3 handlers"
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-SOX_DIR="vendor/sox"
+SOX_DIR="sox"
 DOWNLOAD_URL="https://github.com/dennisdevulder/heroku-buildpack-sox-with-mp3/raw/master/repo.tar"
 
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
