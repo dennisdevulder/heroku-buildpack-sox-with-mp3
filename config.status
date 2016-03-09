@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/tmp/sox-14.4.1'
+ac_pwd='/app/vendor/heroku-buildpack-sox-with-mp3'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -1025,12 +1025,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /tmp/sox-14.4.1/install-sh"
-S["MAKEINFO"]="${SHELL} /tmp/sox-14.4.1/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /tmp/sox-14.4.1/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /tmp/sox-14.4.1/missing --run automake-1.12"
-S["AUTOCONF"]="${SHELL} /tmp/sox-14.4.1/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /tmp/sox-14.4.1/missing --run aclocal-1.12"
+S["install_sh"]="${SHELL} /app/vendor/heroku-buildpack-sox-with-mp3/install-sh"
+S["MAKEINFO"]="${SHELL} /app/vendor/heroku-buildpack-sox-with-mp3/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /app/vendor/heroku-buildpack-sox-with-mp3/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /app/vendor/heroku-buildpack-sox-with-mp3/missing --run automake-1.12"
+S["AUTOCONF"]="${SHELL} /app/vendor/heroku-buildpack-sox-with-mp3/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /app/vendor/heroku-buildpack-sox-with-mp3/missing --run aclocal-1.12"
 S["VERSION"]="14.4.1"
 S["PACKAGE"]="sox"
 S["CYGPATH_W"]="echo"
