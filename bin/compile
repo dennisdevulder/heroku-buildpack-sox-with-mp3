@@ -17,5 +17,6 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p $SOX_DIR
 cd $SOX_DIR
-curl -L --silent $DOWNLOAD_URL | tar xv
-make install
+curl -L --silent $DOWNLOAD_URL | tar x
+./configure --prefix=/app/vendor/sox --enable-dl-lame
+make install > build.log
