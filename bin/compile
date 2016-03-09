@@ -22,4 +22,8 @@ echo "Configuring with lame support"
 ./configure --prefix=/app/.apt/usr/ --enable-dl-lame > conf.log
 echo "Building..."
 make -s && make install > build.log
-echo "Done!"
+
+echo "exporting PATH and LIBRARY_PATH" | indent
+PROFILE_PATH="$BUILD_DIR/.profile.d/sox.sh"
+mkdir -p $(dirname $PROFILE_PATH)
+echo 'export PATH="$PATH:/app/.apt/usr/bin"' >> $PROFILE_PATH
