@@ -19,7 +19,7 @@ mkdir -p $SOX_DIR
 cd $SOX_DIR
 curl -L --silent $DOWNLOAD_URL | tar x
 echo "Configuring with lame support"
-./configure --prefix=/app/vendor/sox --enable-dl-lame > conf.log
+./configure --prefix=/app/.apt/usr/ --enable-dl-lame > conf.log
 echo "Building..."
-make install > build.log
+make -s && make install > build.log
 echo "Done!"
