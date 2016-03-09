@@ -1,0 +1,21 @@
+#!/bin/sh
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+echo "-----> Install sox with mp2/mp3 handlers"
+BUILD_DIR=$1
+VENDOR_DIR="vendor"
+SOX_DIR="vendor/sox"
+DOWNLOAD_URL="https://github.com/dennisdevulder/heroku-buildpack-sox-with-mp3/raw/master/repo.tar"
+
+echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
+
+cd $BUILD_DIR
+mkdir -p $VENDOR_DIR
+cd $VENDOR_DIR
+mkdir -p $SOX_DIR
+cd $SOX_DIR
+curl -L --silent $DOWNLOAD_URL | tar -xvf
+make install
